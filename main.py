@@ -148,7 +148,6 @@ class MacSpooferApp:
             if success:
                 self.status_label.config(text=f"{method['name']} succeeded!")
                 self.mac_display.config(text=f"New MAC: {new_mac}")
-                messagebox.showinfo("Success", f"{method['name']} succeeded.\nMAC: {new_mac}")
                 return
 
         self.status_label.config(text="All methods failed.")
