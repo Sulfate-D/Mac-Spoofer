@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk, messagebox
+from tkinter import ttk
 import subprocess
 import random
 import re
@@ -152,7 +152,7 @@ class MacSpooferApp:
 
         self.status_label.config(text="All methods failed.")
         self.mac_display.config(text="New MAC: -")
-        messagebox.showerror("Failed", "Failed to spoof MAC.\nWrong password or unsupported method.")
+
 
 if __name__ == "__main__":
     root = tk.Tk()
